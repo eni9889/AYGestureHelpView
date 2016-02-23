@@ -149,7 +149,7 @@ static CGFloat const kHelpViewDefaultTouchRadius = 25;
     completionBlock();
   };
   if (!self.superview) {
-    [[[UIApplication sharedApplication] delegate].window addSubview:self];
+    [[[UIApplication sharedApplication] keyWindow] addSubview:self];
   }
   if (self.alpha == 0) {
     [UIView animateWithDuration:0.5f animations:^{
